@@ -1,15 +1,11 @@
 {
   "type": "micro",
-  "wake_word": "hey pixel",
+  "wake_word": "Hey Pixel",
   "author": "Niels van Wijk",
   "model": "https://raw.githubusercontent.com/NLSNL/heypixel/main/hey_pixel.tflite",
   "version": 2,
-  "trained_languages": ["nl"],
   "micro": {
-    "probability_cutoff": 0.97,
-    "sliding_window_size": 5,
-    "feature_step_size": 10,
-    "tensor_arena_size": 22860,
-    "minimum_esphome_version": "2024.7"
+    "probability_cutoff": 0.66,
+    "sliding_window_average_size": 10
   }
 }
